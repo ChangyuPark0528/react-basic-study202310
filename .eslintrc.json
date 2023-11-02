@@ -14,7 +14,13 @@
     "padded-blocks": "off",
     "linebreak-style": "off",
     "comma-dangle": "off",
-    "no-unused-vars": "warn",
-    "react/react-in-jsx-scope": "off"
+    "no-unused-vars": "off",
+    "react/react-in-jsx-scope": "off",
+    "spaced-comment": "off",
+    "react/prop-types": "off",
+    "object-curly-spacing": "off",
+    "prefer-const": "off",
+    "react/jsx-key": "off",
+    "indent": "off"
   }
 }
