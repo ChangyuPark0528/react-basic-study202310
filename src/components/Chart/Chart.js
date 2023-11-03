@@ -9,7 +9,8 @@ const Chart = ({ dataPoints }) => {
 
   //1년치 총액
   //a: 리턴 결과에 대한 누적값, b: 배열에서 하나씩 꺼낸 값
-  const totalValue = dataPointValues.reduce((a, b) => a + b, 0); //0: 초기값
+  const totalValue = dataPointValues.reduce((a, b) => a + b, 0); //0: 초기인덱스값
+  //0을 주지않으면 1번인덱스부터
 
   // 그 중에서 제일 지출이 높은 값
   //   const maximumValue = Math.max(...dataPointValues);
@@ -18,6 +19,7 @@ const Chart = ({ dataPoints }) => {
   return (
     <div className='chart'>
       {dataPoints.map(({ label, value }) => {
+        //월
         return (
           <ChartBar
             key={label}
